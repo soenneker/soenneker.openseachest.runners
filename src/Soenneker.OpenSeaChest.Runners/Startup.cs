@@ -1,5 +1,9 @@
 using Microsoft.Extensions.DependencyInjection;
-using Soenneker.Utils.Process.Registrars;
+using Soenneker.GitHub.Repositories.Releases.Registrars;
+using Soenneker.Utils.File.Download.Registrars;
+using Soenneker.Utils.File.Registrars;
+using Soenneker.Utils.Directory.Registrars;
+using Soenneker.Compression.Tar.XZ.Registrars;
 using Soenneker.OpenSeaChest.Runners.Utils;
 using Soenneker.OpenSeaChest.Runners.Utils.Abstract;
 using Soenneker.Managers.Runners.Registrars;
@@ -22,7 +26,11 @@ public static class Startup
     {
         services.AddHostedService<ConsoleHostedService>()
                 .AddSingleton<IFileOperationsUtil, FileOperationsUtil>()
-                .AddProcessUtilAsSingleton()
+                .AddGitHubRepositoriesReleasesUtilAsSingleton()
+                .AddFileDownloadUtilAsSingleton()
+                .AddFileUtilAsSingleton()
+                .AddDirectoryUtilAsSingleton()
+                .AddTarXZUtilAsSingleton()
                 .AddRunnersManagerAsSingleton();
 
         return services;
