@@ -27,10 +27,10 @@
         <PackageReference Include="Microsoft.Extensions.Hosting" Version="11.0.0-rc.3.26522.148" />
         <PackageReference Include="Soenneker.Managers.Runners" Version="11.0.2663" />
         <PackageReference Include="Soenneker.GitHub.Repositories.Releases" Version="11.0.1108" />
-        <PackageReference Include="Soenneker.Utils.File.Download" Version="11.0.1832" />
+        <PackageReference Include="Soenneker.Utils.File.Download" Version="11.0.1833" />
         <PackageReference Include="Soenneker.Utils.File" Version="11.0.2328" />
         <PackageReference Include="Soenneker.Utils.Directory" Version="11.0.970" />
-        <PackageReference Include="Soenneker.Compression.Tar.XZ" Version="11.0.451" />
+        <PackageReference Include="Soenneker.Compression.Tar.XZ" Version="11.0.452" />
     </ItemGroup>
 </Project>
 
