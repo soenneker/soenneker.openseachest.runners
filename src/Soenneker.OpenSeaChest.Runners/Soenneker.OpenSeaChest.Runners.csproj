@@ -27,7 +27,7 @@
         <PackageReference Include="Microsoft.Extensions.Hosting" Version="11.0.0" />
         <PackageReference Include="Soenneker.Managers.Runners" Version="11.0.2751" />
         <PackageReference Include="Soenneker.Utils.File.Download" Version="11.0.1869" />
-        <PackageReference Include="Soenneker.Compression.Tar.XZ" Version="11.0.484" />
+        <PackageReference Include="Soenneker.Compression.Tar.XZ" Version="11.0.485" />
     </ItemGroup>
 </Project>
 
